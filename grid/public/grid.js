@@ -1,8 +1,6 @@
 var lastClicked;
 var clicked;
 
-
-
 var liststate = {};
 var objectstate = [];
 
@@ -42,8 +40,6 @@ function clickableGrid( rows, cols, callback ){
       var cell = tr.appendChild(document.createElement('td'));
       cell.innerHTML = i++ ;      //add content to cells
 
-
-
       //liststate.push(i);
       //event listeners
       //
@@ -74,7 +70,6 @@ function clickableGrid( rows, cols, callback ){
             objectstate[i] = 0;
             console.log("cell # " + (i-1) +"is " + objectstate[i]);
           }
-
           callback(el,r,c,i);
         }
       }
