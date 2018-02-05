@@ -1,0 +1,33 @@
+.container{
+padding-top: 100px;
+
+}
+
+
+.grid { margin:2em auto; border-collapse:collapse }
+
+.grid td {
+    cursor:pointer;
+    width:40px; height:40px;
+    border:1px solid #ccc;
+    text-align:center;
+    font-family:sans-serif; font-size:10px
+}
+.grid td.clicked {
+    background-color:grey;
+    font-weight:bold; color:white;
+}
+
+.grid td.hovered {
+    background-color:lightgrey;
+    font-weight:bold; color:white;
+}
+
+
+.grid.notclicked td {
+    cursor:pointer;
+    width:40px; height:40px;
+    border:1px solid #ccc;
+    text-align:center;
+    font-family:sans-serif; font-size:10px
+}
