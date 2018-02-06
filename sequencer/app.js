@@ -29,15 +29,16 @@ var picked = []
 
   app.post('/pick-number', function (req, res) {
     console.log(res)
-    var num = res.body.count
-    picked.push(num)
-    res.json({picked: picked})
+    //var num = res.body.count
+    //picked.push(num)
+    //res.json({picked: picked})
 
     //res.sendFile(path.join(__dirname+'/index.html'));
     //__dirname : It will resolve to your project folder.
     // res.sendFile('index.html');
     // res.render('index');
-    res.send('Hello World!')
+    //res.sendfile(express.static('public'));
+    res.send('I want to redirect you to the index.html but I cant ):')
   });
 
 //
