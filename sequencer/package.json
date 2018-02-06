@@ -1,0 +1,9 @@
+{
+  "name": "express-html",
+  "version": "0.0.1",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.11.0",
+    "tone": "^0.11.11"
+  }
+}
