@@ -60,13 +60,21 @@ function clickableGrid( rows, cols, callback ){
             objectstate[i] = 1;
             console.log("cell # " + (i-1) +"is " +   liststate[i]);
             el.className='clicked';
+
+            var randstarttime = ((Math.random() * 5) + 1);
+            console.log(randstarttime);
             //tone.js
+
+            //Ask Yotam how can I make each Cell have a different instrument/frequency
             synth = new Tone.Synth().toMaster();
-            synth.triggerAttackRelease(440 * Tone.intervalToFrequencyRatio(i-60), '6n');
+            var loop = new Tone.Loop(function(time){
+              synth.triggerAttackRelease(440 * Tone.intervalToFrequencyRatio(i-60), '6n');
+            }, "3n").start();
+            Tone.Transport.start();
+
+
             var jsonString = JSON.stringify(objectstate);
-
             //document.getElementById("demo").innerHTML = jsonString;
-
             //  ajax request'
             console.log('ajaxing the state on click of '+ (i-1) + ' == 1', objectstate)
             $.ajax({
@@ -78,25 +86,41 @@ function clickableGrid( rows, cols, callback ){
             });
 
 
+            console.log('calling data from db')
+            $.ajax({
+              url: "/getCell",
+              type: 'get',
+              //data: {objectstate: JSON.stringify(objectstate)}
+            }).done(function(data) {
+              console.log('data from server', data)
+
+            });
+
+
+
           }else{
             el.className='';
             liststate[i] = 0;
             objectstate[i] = 0;
-            var jsonString = JSON.stringify(objectstate);
 
+            //tone.js
+            Tone.Transport.cancel ( )
+
+
+            var jsonString = JSON.stringify(objectstate);
             //document.getElementById("demo").innerHTML = jsonString;
 
             //  ajax request'
 
-                    console.log('ajaxing the state on click of '+ (i-1) + ' == 0', objectstate)
-                    $.ajax({
-                      url: "/updateCell",
-                      type: 'post',
-                      data: {objectstate: JSON.stringify(objectstate)}
-                    }).done(function(data) {
-                      //console.log('data from server', data)
-                      //console.log("kkkk");
-                    });
+            console.log('ajaxing the state on click of '+ (i-1) + ' == 0', objectstate)
+            $.ajax({
+              url: "/updateCell",
+              type: 'post',
+              data: {objectstate: JSON.stringify(objectstate)}
+            }).done(function(data) {
+              //console.log('data from server', data)
+              //console.log("kkkk");
+            });
 
           }
           callback(el,r,c,i);
