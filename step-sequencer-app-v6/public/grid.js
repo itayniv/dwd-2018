@@ -115,62 +115,62 @@ $.ajax({
 
     if (userNo == 0){
       synth = 'white';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 1){
       synth = 'red';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 2){
       synth = 'yellow';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 3){
       synth = 'purple';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 4){
       synth = 'gold';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 5){
       synth = 'green';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 6){
       synth = 'salmon';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 7){
       synth = 'blue';
-      console.log('synth', synth);
+      console.log('syou are ', synth);
     }
 
     if (userNo == 8){
       synth = 'aqua';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 9){
       synth = 'darkgreen';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 10){
       synth = 'lightpink';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
     if (userNo == 11){
       synth = 'darkblue';
-      console.log('synth', synth);
+      console.log('you are ', synth);
     }
 
 
@@ -240,156 +240,301 @@ if (checkId != true){
 
 socket.on('currplayer', function(incomingTick){
   globalTick = incomingTick;
-  console.log("socket  -currplayer")
-  //console.log(liststate[1].instrument);
+
+
+
+
+
 
   for(var i = 0; i < (width*height) ;i++){
+    if (arrayrecieved == true){
+        //  console.log(liststate[i].instrument);
 
-    // if (liststate[i].instrument != null){
-    //   // if (liststate[i].instrument == 'synth01'){
-    //   //
-    //   // }
-    // }
+          if(liststate[i].instrument = 'synth01'){
 
-    //   if(liststate[i].instrument = 'synth01'){
-    //     console.log('yay');
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*0)] == 1)){
-    //       note1_1();
-    //       console.log('hit1.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*1)] == 1)){
-    //       note2_1();
-    //       console.log('hit2.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*2)] == 1)){
-    //       note3_1();
-    //       console.log('hit3.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*3)] == 1)){
-    //       note4_1();
-    //       console.log('hit4.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*4)] == 1)){
-    //       note5_1();
-    //       console.log('hit5.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*5)] == 1)){
-    //       note6_1();
-    //       console.log('hit6.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*6)] == 1)){
-    //       note7_1();
-    //       console.log('hit7.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*7)] == 1)){
-    //       note8_1();
-    //       console.log('hit8.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*8)] == 1)){
-    //       note9_1();
-    //       console.log('hit9.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*9)] == 1)){
-    //       note10_1();
-    //       console.log('hit10.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*10)] == 1)){
-    //       note11_1();
-    //       console.log('hit11.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*11)] == 1)){
-    //       note12_1();
-    //       console.log('hit12.1');
-    //     }
-    //
-    //     if ((liststate[i].activated==1) && (pattern01[i-(16*12)] == 1)){
-    //       note13_1();
-    //       console.log('hit13.1');
-    //     }
-    //   }
+            if ((liststate[i].activated==1) && (pattern01[i-(16*0)] == 1)){
+              note1_1();
+              console.log('hit1.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*1)] == 1)){
+              note2_1();
+              console.log('hit2.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*2)] == 1)){
+              note3_1();
+              console.log('hit3.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*3)] == 1)){
+              note4_1();
+              console.log('hit4.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*4)] == 1)){
+              note5_1();
+              console.log('hit5.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*5)] == 1)){
+              note6_1();
+              console.log('hit6.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*6)] == 1)){
+              note7_1();
+              console.log('hit7.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*7)] == 1)){
+              note8_1();
+              console.log('hit8.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*8)] == 1)){
+              note9_1();
+              console.log('hit9.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*9)] == 1)){
+              note10_1();
+              console.log('hit10.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*10)] == 1)){
+              note11_1();
+              console.log('hit11.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*11)] == 1)){
+              note12_1();
+              console.log('hit12.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*12)] == 1)){
+              note13_1();
+              console.log('hit13.1');
+            }
+          }
+
+          if(liststate[i].instrument = 'synth02'){
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*0)] == 1)){
+              note1_1();
+              console.log('hit1.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*1)] == 1)){
+              note2_1();
+              console.log('hit2.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*2)] == 1)){
+              note3_1();
+              console.log('hit3.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*3)] == 1)){
+              note4_1();
+              console.log('hit4.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*4)] == 1)){
+              note5_1();
+              console.log('hit5.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*5)] == 1)){
+              note6_1();
+              console.log('hit6.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*6)] == 1)){
+              note7_1();
+              console.log('hit7.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*7)] == 1)){
+              note8_1();
+              console.log('hit8.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*8)] == 1)){
+              note9_1();
+              console.log('hit9.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*9)] == 1)){
+              note10_1();
+              console.log('hit10.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*10)] == 1)){
+              note11_1();
+              console.log('hit11.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*11)] == 1)){
+              note12_1();
+              console.log('hit12.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*12)] == 1)){
+              note13_1();
+              console.log('hit13.1');
+            }
+          }
 
 
-    // play the yellow Sequencer
-    if((synth == 'yellow') && (arrayrecieved == true)){
-      for(var i = 0; i < (width*height) ;i++){
-        if ((liststate[i].activated==1) && (pattern01[i-(16*0)] == 1)){
-          note1_1();
-          console.log('hit1.2');
+          if(liststate[i].instrument = 'synth03'){
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*0)] == 1)){
+              note1_1();
+              console.log('hit1.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*1)] == 1)){
+              note2_1();
+              console.log('hit2.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*2)] == 1)){
+              note3_1();
+              console.log('hit3.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*3)] == 1)){
+              note4_1();
+              console.log('hit4.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*4)] == 1)){
+              note5_1();
+              console.log('hit5.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*5)] == 1)){
+              note6_1();
+              console.log('hit6.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*6)] == 1)){
+              note7_1();
+              console.log('hit7.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*7)] == 1)){
+              note8_1();
+              console.log('hit8.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*8)] == 1)){
+              note9_1();
+              console.log('hit9.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*9)] == 1)){
+              note10_1();
+              console.log('hit10.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*10)] == 1)){
+              note11_1();
+              console.log('hit11.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*11)] == 1)){
+              note12_1();
+              console.log('hit12.1');
+            }
+
+            if ((liststate[i].activated==1) && (pattern01[i-(16*12)] == 1)){
+              note13_1();
+              console.log('hit13.1');
+            }
+          }
+
+
+
+
+                    if(liststate[i].instrument = 'synth04'){
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*0)] == 1)){
+                        note1_1();
+                        console.log('hit1.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*1)] == 1)){
+                        note2_1();
+                        console.log('hit2.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*2)] == 1)){
+                        note3_1();
+                        console.log('hit3.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*3)] == 1)){
+                        note4_1();
+                        console.log('hit4.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*4)] == 1)){
+                        note5_1();
+                        console.log('hit5.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*5)] == 1)){
+                        note6_1();
+                        console.log('hit6.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*6)] == 1)){
+                        note7_1();
+                        console.log('hit7.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*7)] == 1)){
+                        note8_1();
+                        console.log('hit8.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*8)] == 1)){
+                        note9_1();
+                        console.log('hit9.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*9)] == 1)){
+                        note10_1();
+                        console.log('hit10.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*10)] == 1)){
+                        note11_1();
+                        console.log('hit11.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*11)] == 1)){
+                        note12_1();
+                        console.log('hit12.1');
+                      }
+
+                      if ((liststate[i].activated==1) && (pattern01[i-(16*12)] == 1)){
+                        note13_1();
+                        console.log('hit13.1');
+                      }
+                    }
+
+
+
         }
 
-        if ((liststate[i].activated==1) && (pattern01[i-(16*1)] == 1)){
-          note2_1();
-          console.log('hit2.2');
-        }
 
-        if ((liststate[i].activated==1) && (pattern01[i-(16*2)] == 1)){
-          note3_1();
-          console.log('hit3.2');
-        }
 
-        if ((liststate[i].activated==1) && (pattern01[i-(16*3)] == 1)){
-          note4_1();
-          console.log('hit4.2');
-        }
 
-        if ((liststate[i].activated==1) && (pattern01[i-(16*4)] == 1)){
-          note5_1();
-          console.log('hit5.2');
-        }
 
-        if ((liststate[i].activated==1) && (pattern01[i-(16*5)] == 1)){
-          note6_1();
-          console.log('hit6.2');
-        }
 
-        if ((liststate[i].activated==1) && (pattern01[i-(16*6)] == 1)){
-          note7_1();
-          console.log('hit7.2');
-        }
-
-        if ((liststate[i].activated==1) && (pattern01[i-(16*7)] == 1)){
-          note8_1();
-          console.log('hit8.2');
-        }
-
-        if ((liststate[i].activated==1) && (pattern01[i-(16*8)] == 1)){
-          note9_1();
-          console.log('hit9.2');
-        }
-
-        if ((liststate[i].activated==1) && (pattern01[i-(16*9)] == 1)){
-          note10_1();
-          console.log('hit10.2');
-        }
-
-        if ((liststate[i].activated==1) && (pattern01[i-(16*10)] == 1)){
-          note11_1();
-          console.log('hit11.2');
-        }
-
-        if ((liststate[i].activated==1) && (pattern01[i-(16*11)] == 1)){
-          note12_1();
-          console.log('hit12.2');
-        }
-
-        if ((liststate[i].activated==1) && (pattern01[i-(16*12)] == 1)){
-          note13_1();
-          console.log('hit13.2');
-        }
-      }
-    }
   }
 
 
