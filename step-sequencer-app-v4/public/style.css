@@ -1,0 +1,80 @@
+.container{
+padding-top: 100px;
+
+}
+
+
+.grid { margin:0em auto; border-collapse:collapse }
+
+.grid td {
+    cursor:pointer;
+    width:40px; height:40px;
+    border:1px solid #ccc;
+    text-align:center;
+    font-family:sans-serif; font-size:10px; color:#ffffff00;
+
+}
+.grid td.clickedRed {
+    background-color:#E92626;
+    font-weight:bold; color:#ffffff00;
+}
+
+.grid td.clickedYellow {
+    background-color:#FFD710;
+    font-weight:bold; color:#ffffff00;
+}
+
+.grid td.clickedPurple {
+    background-color:#774778;
+    font-weight:bold; color:#ffffff00;
+}
+
+
+
+.grid td.player {
+    background-color:#ececec;
+    font-weight:bold; color:#ffffff00;
+
+}
+
+.grid td.notplayer {
+    background-color:#ffffff;
+    font-weight:bold; color:black;
+    color: #ffffff;
+}
+
+.grid td.hovered {
+    background-color:lightgrey;
+    font-weight:bold; color:white;
+}
+
+
+.grid.notclicked td {
+  background-color:#ffffff00;
+  font-weight:bold; color:white;
+}
+
+
+
+.logo {
+    text-align: center;
+    width: 15px;
+}
+
+
+.body {
+  padding: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: salmon;
+  border: none;
+}
+
+.button:hover {
+  background: lightsalmon;
+}
